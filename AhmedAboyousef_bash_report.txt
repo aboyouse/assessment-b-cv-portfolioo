@@ -1,0 +1,8 @@
+New learning comments report
+----------------------------
+index.html: 3
+cv.html: 8
+style.css: 9
+app.js: 9
+----------------------------
+Total comments: 29

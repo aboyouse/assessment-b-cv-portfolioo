@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- new: this helps the homepage fit on phones and laptops -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Ahmed Aboyousef | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- new: this header uses the same navigation style as the CV page -->
+  <header>
+    <div class="logo">CV<span>Portfolio</span></div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cv.html">CV</a>
+    </nav>
+
+    <button id="themeToggle">Dark Mode</button>
+  </header>
+
+  <!-- new: this homepage section will be filled by JavaScript from data.json -->
+  <section class="home-section">
+    <div class="home-card">
+      <div class="avatar big-avatar">A</div>
+
+      <h1 id="home-name">Loading...</h1>
+      <h3 id="home-role"></h3>
+      <p id="home-profile"></p>
+
+      <a href="cv.html" class="main-btn">View My CV</a>
+    </div>
+  </section>
+
+  <footer>© 2026 Ahmed Aboyousef · Lancaster University Leipzig</footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

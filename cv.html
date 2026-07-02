@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- new: this helps the page fit on different screen sizes -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Ahmed Aboyousef | CV</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- new: this header keeps the same style as the old CV project -->
+  <header>
+    <div class="logo">CV<span>Portfolio</span></div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cv.html">CV</a>
+    </nav>
+
+    <button id="themeToggle">Dark Mode</button>
+  </header>
+
+  <main>
+
+    <!-- new: this side card will be filled by JavaScript from data.json -->
+    <aside>
+      <div class="avatar">A</div>
+
+      <h2 id="profile-name">Loading...</h2>
+      <p class="role" id="profile-role"></p>
+
+      <ul class="contact-list">
+        <li id="profile-location"></li>
+        <li id="profile-email"></li>
+        <li id="profile-university"></li>
+        <li id="profile-year"></li>
+      </ul>
+    </aside>
+
+    <div class="cv-content">
+
+      <div class="intro-box">
+        <h1>My CV</h1>
+        <p>This page shows my CV information using content loaded from a JSON file.</p>
+      </div>
+
+      <!-- new: the profile text will come from data.json -->
+      <div class="cv-section">
+        <div class="section-heading">
+          <h2>Profile</h2>
+          <button class="toggle-btn">Show / Hide</button>
+        </div>
+        <div class="section-body">
+          <p id="profile-text"></p>
+        </div>
+      </div>
+
+      <!-- new: the education table will be created by JavaScript -->
+      <div class="cv-section">
+        <div class="section-heading">
+          <h2>Education</h2>
+          <button class="toggle-btn">Show / Hide</button>
+        </div>
+        <div class="section-body">
+          <table>
+            <thead>
+              <tr>
+                <th>Year</th>
+                <th>Institution</th>
+                <th>Course</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="education-table"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- new: the skills lists will be created from data.json -->
+      <div class="cv-section">
+        <div class="section-heading">
+          <h2>Technical Skills</h2>
+          <button class="toggle-btn">Show / Hide</button>
+        </div>
+        <div class="section-body">
+          <div class="skill-cols">
+            <div>
+              <h3>Web</h3>
+              <ul id="web-skills"></ul>
+            </div>
+
+            <div>
+              <h3>Tools</h3>
+              <ul id="tool-skills"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- new: projects will be created by JavaScript -->
+      <div class="cv-section">
+        <div class="section-heading">
+          <h2>Projects</h2>
+          <button class="toggle-btn">Show / Hide</button>
+        </div>
+        <div class="section-body" id="projects-list"></div>
+      </div>
+
+      <!-- new: interests will be created by JavaScript -->
+      <div class="cv-section">
+        <div class="section-heading">
+          <h2>Interests</h2>
+          <button class="toggle-btn">Show / Hide</button>
+        </div>
+        <div class="section-body">
+          <ul id="interests-list"></ul>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>© 2026 Ahmed Aboyousef · Lancaster University Leipzig</footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

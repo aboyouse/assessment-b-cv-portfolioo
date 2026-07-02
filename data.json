@@ -1,0 +1,43 @@
+{
+  "name": "Ahmed Aboyousef",
+  "role": "CS Student",
+  "location": "Leipzig, Germany",
+  "email": "a.aboyousef@lancaster.ac.uk",
+  "university": "Lancaster University Leipzig",
+  "year": "2025 – 2026",
+  "profile": "First-year Computer Science student at Lancaster University Leipzig, interested in front-end development and practical web technologies. I enjoy building clean websites and learning tools like Git, Bash, HTML, CSS, and JavaScript.",
+  "education": [
+    {
+      "year": "2025 – 2026",
+      "institution": "Lancaster University Leipzig",
+      "course": "Computer Science Ecosystems",
+      "status": "In Progress"
+    }
+  ],
+  "skills": {
+    "web": [
+      "HTML & CSS",
+      "JavaScript DOM",
+      "Flexbox & Grid",
+      "Responsive design"
+    ],
+    "tools": [
+      "Git & GitHub",
+      "Linux terminal",
+      "Bash scripting",
+      "VS Code"
+    ]
+  },
+  "projects": [
+    {
+      "name": "CV Portfolio Website",
+      "description": "Built a multi-page portfolio site with HTML, CSS, and JavaScript. Features a theme toggle, Bash script for HTML analysis, and is version-controlled with Git on GitHub."
+    }
+  ],
+  "interests": [
+    "Front-end design and creative coding",
+    "Building responsive websites",
+    "Learning new developer tools",
+    "Problem solving and logic"
+  ]
+  }
