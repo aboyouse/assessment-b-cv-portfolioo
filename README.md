@@ -40,6 +40,6 @@ The website includes:
 - Dynamic loading of CV content from `data.json`
 
 ## GitHub Repository
-
+https://github.com/aboyouse/assessment-b-cv-portfolioo
 
 Assessment B final update
