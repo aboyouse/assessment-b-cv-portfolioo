@@ -140,3 +140,31 @@ for (var i = 0; i < buttons.length; i++) {
     body.classList.toggle("hidden");
   });
 }
+
+
+// new: immersive scroll-triggered animation. IntersectionObserver watches
+// every element with the "reveal" class and adds "active" the moment it
+// enters the viewport, which triggers the fade/slide-up transition in
+// style.css. This makes each CV section and the homepage card animate
+// into view as the user scrolls, instead of just appearing instantly.
+var revealElements = document.querySelectorAll(".reveal");
+
+if (revealElements.length > 0 && "IntersectionObserver" in window) {
+  var revealObserver = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("active");
+        revealObserver.unobserve(entry.target); // new: only animate once
+      }
+    });
+  }, { threshold: 0.15 });
+
+  revealElements.forEach(function(el) {
+    revealObserver.observe(el);
+  });
+} else {
+  // new: fallback for browsers without IntersectionObserver support
+  revealElements.forEach(function(el) {
+    el.classList.add("active");
+  });
+}

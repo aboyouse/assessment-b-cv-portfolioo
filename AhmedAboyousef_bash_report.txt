@@ -2,7 +2,7 @@ New learning comments report
 ----------------------------
 index.html: 3
 cv.html: 8
-style.css: 9
-app.js: 9
+style.css: 12
+app.js: 12
 ----------------------------
-Total comments: 29
+Total comments: 35
